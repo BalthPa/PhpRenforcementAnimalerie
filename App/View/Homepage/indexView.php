@@ -42,7 +42,7 @@
 <h3 class="text-center">Derniers animaux</h3>
 <div class="affichage mt-5 d-flex justify-content-around flex-wrap">
     <?php foreach ($animaux as $animal) : ?>
-        <div class="card col-sm-4">
+        <div class="card col-sm-3 text-white bg-dark mb-3" style="padding-top: 30px">
             <?php
             if ($animal->getRace() == 'Chien'){
                 echo '<img class="card-img-top" style="width: 50%; margin:auto" src="https://bit.ly/2y65nce" alt="Photo de chien">';
@@ -83,7 +83,7 @@
     <div class="affichage mt-5 d-flex justify-content-around flex-wrap">
 
         <?php foreach ($produits as $produit) : ?>
-            <div class="card col-sm-4">
+            <div class="card col-sm-3 text-white bg-dark mb-3 " style="padding-top: 30px">
                 <?php
                 if ($produit->getType() == 'Chien'){
                     echo '<img class="card-img-top" style="width: 50%; margin:auto" src="https://bit.ly/35hHNp3" alt="Card image cap">';

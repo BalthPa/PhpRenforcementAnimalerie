@@ -4,7 +4,7 @@
 <div class="affichage mt-5 d-flex justify-content-around flex-wrap">
 
     <?php foreach ($products as $product) : ?>
-        <div class="card col-sm-4">
+        <div class="card col-sm-3 text-white bg-dark mb-3 " style="padding-top: 30px">
             <?php
             if ($product->getType() == 'Chien'){
                 echo '<img class="card-img-top" style="width: 50%; margin:auto" src="https://bit.ly/35hHNp3" alt="Card image cap">';
