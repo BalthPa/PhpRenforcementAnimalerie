@@ -32,7 +32,7 @@
                     <p>Taille: <?= $animal->gettaille() ?> cms</p>
                     <p>Age: <?= $animal->getAge() ?> ans</p>
                 </div>
-                <a href="index.php?page=singleAnimal&id=<?= $animal->getId() ?>" class="btn btn-primary">Go somewhere</a>
+                <a href="index.php?page=singleAnimal&id=<?= $animal->getId() ?>" class="btn btn-primary">Voir l'Animal</a>
             </div>
         </div>
     <?php endforeach ?>
@@ -62,24 +62,26 @@
                         <p>Stock: <?= $produit->getStock() ?> </p>
 
                     </div>
-                    <a href="index.php?page=singleProduct&id=<?= $produit->getId() ?>" class="btn btn-primary">Go somewhere</a>
+                    <a href="index.php?page=singleProduct&id=<?= $produit->getId() ?>" class="btn btn-primary">Voir le Produit</a>
                 </div>
             </div>
         <?php endforeach ?>
     </div>
 </div>
 
-<div class="don" style="padding-top: 80px;  padding-bottom: 80px">
+<div class="dons" style="padding-top: 80px;  padding-bottom: 80px">
     <div class="container">
-        <h2 class="text-center"> Formulaire de don</h2>
-        <form>
+        <h2 class="text-center"> Formulaire de dons</h2>
             <p class="text-center" > Cet argent nous servira pour prendre soin des animaux en attendant que des
                 personnes bienveillantes viennent adopter un animal.</p>
-            <div class="form-group">
-                <label for="exampleInputPassword1">De combien d'euros voulez-vous faire un don ?</label>
-                <input type="number" class="form-control" id="exampleInputPassword1" placeholder="Ex: 20€">
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+  
+    <form action="index.php?page=merci" method="post">
+        Nom: <input type="text" name="nom"><br>
+        Montant: <input type="number" name="montant"><br>
+        Date: <input type="date" name="date"><br>
+        <button type="submit">Donner</button>
+    </form>
+       
+    </div>
     </div>
 </div>

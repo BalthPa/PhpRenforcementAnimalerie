@@ -29,7 +29,7 @@
                     <p>Taille: <?= $animal->gettaille() ?> cms</p>
                     <p>Age: <?= $animal->getAge() ?> ans</p>
                 </div>
-                <a href="index.php?page=singleAnimal&id=<?= $animal->getId() ?>" class="btn btn-primary">Go somewhere</a>
+                <a href="index.php?page=singleAnimal&id=<?= $animal->getId() ?>" class="btn btn-primary">Voir l'animal</a>
             </div>
         </div>
     <?php endforeach ?>

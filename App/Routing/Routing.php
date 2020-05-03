@@ -91,3 +91,12 @@ elseif (isset($_GET["page"]) && $_GET["page"] == 'updateAnimal') {
     $controller->deleteProduits();
 }
 
+if (isset($_GET["page"]) && $_GET["page"] == 'dons') {
+    $controller = new HomeController();
+    $controller->dons();
+}
+
+if (isset($_GET["page"]) && $_GET["page"] == 'merci') {
+    $controller = new HomeController();
+    $controller->merci();
+}
