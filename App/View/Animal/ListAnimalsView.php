@@ -2,7 +2,7 @@
 
 <h2 class="text-center">Listes des animaux</h2>
 
-<div class="affichage d-flex flex-wrap">
+<div class="affichage mt-5 d-flex justify-content-around flex-wrap">
     <?php foreach ($animaux as $animal) : ?>
         <div class="card col-sm-4">
             <?php
@@ -29,7 +29,7 @@
                     <p>Taille: <?= $animal->gettaille() ?> cms</p>
                     <p>Age: <?= $animal->getAge() ?> ans</p>
                 </div>
-                <a href="index.php?page=singleAnimal&id=<?= $animal->getId() ?>" class="btn btn-primary">Go somewhere</a>
+                <a href="index.php?page=singleAnimal&id=<?= $animal->getId() ?>" class="btn btn-primary">Voir l'animal</a>
             </div>
         </div>
     <?php endforeach ?>
