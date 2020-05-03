@@ -15,13 +15,13 @@
                 echo '<img class="card-img-top" style="width: 50%; margin:auto" src="https://bit.ly/2Yru7Gi" alt="Photo de chat">';
             }
             else if ($animal->getRace() == 'Poisson'){
-                echo '<img class="card-img-top" style="width: 50%; margin:auto" src="https://lemagdesanimaux.ouest-france.fr/images/dossiers/2020-04/voile-de-chine-113105.jpg" alt="Photo de poisson">';
+                echo '<img class="card-img-top" style="width: 50%; margin:auto" src="https://bit.ly/2z9rrCA" alt="Photo de poisson">';
             }
             else if ($animal->getRace() == 'Lapin'){
-                echo '<img class="card-img-top" style="width: 50%; margin:auto" src="https://images.unsplash.com/photo-1586619031147-0f48d66c10f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1049&q=80">';
+                echo '<img class="card-img-top" style="width: 50%; margin:auto" src="https://bit.ly/3aY33Bn" alt="Photo de lapin">';
             }
             else if ($animal->getRace() == 'Souris'){
-                echo '<img class="card-img-top" style="width: 50%; margin:auto" src="https://lemagdesanimaux.ouest-france.fr/images/dossiers/2020-04/voile-de-chine-113105.jpg" alt="Photo de souris">';
+                echo '<img class="card-img-top" style="width: 50%; margin:auto" src="https://bit.ly/2YsNkaM" alt="Photo de souris">';
             }
             else{
                 echo '<p class="text-center">Image indisponible</p>' ;
