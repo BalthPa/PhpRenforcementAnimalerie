@@ -80,7 +80,7 @@
                     echo '<img class="card-img-top" style="width: 50%; margin:auto" src="https://bit.ly/35ur6qB" alt="Card image cap 2">';
                 }
                 else {
-                    echo '<img class="card-img-top" style="width: 50%; margin:auto" src="https://bit.ly/3aXs8wp" alt="Card image cap 2">';
+                    echo '<img class="card-img-top" style="width: 50%; margin:auto" src="https://bit.ly/2YsNkaM" alt="Card image cap 2">';
                 }
                 ?>
                 <div class="card-body">
