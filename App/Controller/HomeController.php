@@ -25,4 +25,26 @@ class HomeController extends Controller
             'produits' => $produits
         ]);
     }
+
+    public function dons(){
+
+            if(!empty($_POST['user_id']) && !empty($_POST['montant']) && !empty($_POST['date'])) {
+
+                $this->interface->save($_POST, 'montant');
+                return $this->redirectToRoute('Homepage/Remerciment_dons');
+            }
+        }
+
+    public function merci(){
+
+        if(!empty($_POST['nom']) && !empty($_POST['montant']) && !empty($_POST['date'])) {
+
+            $this->interface->save($_POST, 'dons');
+            return $this->redirectToRoute('Homepage/Remerciment_dons');
+        }
+        else 
+
+        return "Erreur de Paiement";
+    }
+
 }

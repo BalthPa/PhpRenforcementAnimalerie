@@ -22,7 +22,7 @@
                     <p>Stock: <?= $product->getStock() ?> </p>
 
                 </div>
-                <a href="index.php?page=singleProduct&id=<?= $product->getId() ?>" class="btn btn-primary">Voir plus</a>
+                <a href="index.php?page=singleProduct&id=<?= $product->getId() ?>" class="btn btn-primary">Voir l'article</a>
             </div>
         </div>
     <?php endforeach ?>

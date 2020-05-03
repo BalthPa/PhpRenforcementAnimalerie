@@ -34,7 +34,7 @@
 
 
 <h3 class="text-center">Derniers animaux</h3>
-<div class="affichage d-flex flex-wrap">
+<div class="affichage mt-5 d-flex justify-content-around flex-wrap">
     <?php foreach ($animaux as $animal) : ?>
         <div class="card col-sm-4">
             <?php
@@ -61,13 +61,13 @@
                     <p>Taille: <?= $animal->gettaille() ?> cms</p>
                     <p>Age: <?= $animal->getAge() ?> ans</p>
                 </div>
-                <a href="index.php?page=singleAnimal&id=<?= $animal->getId() ?>" class="btn btn-primary">Go somewhere</a>
+                <a href="index.php?page=singleAnimal&id=<?= $animal->getId() ?>" class="btn btn-primary">Voir l'Animal</a>
             </div>
         </div>
     <?php endforeach ?>
 </div>
 <div>
-    <h3 class="text-center">Derniers produits</h3>
+    <h3 class="text-center" style="padding-top: 80px">Derniers produits</h3>
     <div class="affichage mt-5 d-flex justify-content-around flex-wrap">
 
         <?php foreach ($produits as $produit) : ?>
@@ -91,15 +91,11 @@
                         <p>Stock: <?= $produit->getStock() ?> </p>
 
                     </div>
-                    <a href="index.php?page=singleProduct&id=<?= $produit->getId() ?>" class="btn btn-primary">Go somewhere</a>
+                    <a href="index.php?page=singleProduct&id=<?= $produit->getId() ?>" class="btn btn-primary">Voir le Produit</a>
                 </div>
             </div>
         <?php endforeach ?>
     </div>
-</div>
-
-<div class="don">
-
 </div>
 
 <style>
@@ -218,3 +214,20 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 </script>
+
+<div class="dons" style="padding-top: 80px;  padding-bottom: 80px">
+    <div class="container">
+        <h2 class="text-center"> Formulaire de dons</h2>
+            <p class="text-center" > Cet argent nous servira pour prendre soin des animaux en attendant que des
+                personnes bienveillantes viennent adopter un animal.</p>
+  
+    <form action="index.php?page=merci" method="post">
+        Nom: <input type="text" name="nom"><br>
+        Montant: <input type="number" name="montant"><br>
+        Date: <input type="date" name="date"><br>
+        <button type="submit">Donner</button>
+    </form>
+       
+    </div>
+    </div>
+</div>
