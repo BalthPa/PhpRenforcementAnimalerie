@@ -1,3 +1,5 @@
+<div class="recherche mt-5"></div>
+
 <h3 class="text-center">Derniers produits</h3>
 <div class="affichage mt-5 d-flex justify-content-around flex-wrap">
 
