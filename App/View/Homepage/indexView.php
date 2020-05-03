@@ -5,7 +5,7 @@
 <div class="recherche mt-5"></div>
 
 <h3 class="text-center">Derniers animaux</h3>
-<div class="affichage d-flex flex-wrap">
+<div class="affichage mt-5 d-flex justify-content-around flex-wrap">
     <?php foreach ($animaux as $animal) : ?>
         <div class="card col-sm-4">
             <?php
@@ -38,7 +38,7 @@
     <?php endforeach ?>
 </div>
 <div>
-    <h3 class="text-center">Derniers produits</h3>
+    <h3 class="text-center" style="padding-top: 80px">Derniers produits</h3>
     <div class="affichage mt-5 d-flex justify-content-around flex-wrap">
 
         <?php foreach ($produits as $produit) : ?>
