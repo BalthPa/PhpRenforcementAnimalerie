@@ -6,6 +6,8 @@ use App\Controller\UserController;
 use App\Controller\HomeController;
 use App\Controller\ProduitController;
 use App\Controller\AdminController;
+use App\Controller\PanierController;
+
 
 
 use Model\DbInterface;
@@ -89,5 +91,14 @@ elseif (isset($_GET["page"]) && $_GET["page"] == 'updateAnimal') {
 } elseif (isset($_GET["page"]) && $_GET["page"] == 'deleteProduct') {
     $controller = new AdminController();
     $controller->deleteProduits();
+}
+
+elseif (isset($_GET["page"]) && $_GET["page"] == 'addPanier') {
+    $controller = new ProduitController();
+    $controller->addPanier();
+
+} elseif (isset($_GET["page"]) && $_GET["page"] == 'panier') {
+    $controller = new PanierController();
+    $controller->panier();
 }
 

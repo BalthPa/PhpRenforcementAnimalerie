@@ -14,6 +14,7 @@ class HomeController extends Controller
     {
         $this->AnimalModel = new AnimalModel();
         $this->ProduitModel = new ProduitModel();
+        $this->interface = new DbInterface();
     }
 
     public function home()
@@ -25,4 +26,6 @@ class HomeController extends Controller
             'produits' => $produits
         ]);
     }
+
+
 }

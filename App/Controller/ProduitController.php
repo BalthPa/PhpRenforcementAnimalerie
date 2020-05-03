@@ -28,4 +28,15 @@ class ProduitController extends Controller
             'produit' => $produit
         ]);
     }
+
+    public function addPanier(){
+        if(!empty($_POST)){
+
+
+            if(!empty($_POST['produit']) && !empty($_POST['quantite']) && !empty($_POST['montant'])) {
+
+                $this->interface->save($_POST, 'panier');
+            }}
+        return $this->redirectToRoute('allProducts');
+    }
 }
