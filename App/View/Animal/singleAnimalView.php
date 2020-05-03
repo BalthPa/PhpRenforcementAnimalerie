@@ -9,7 +9,11 @@
                 <p>Taille: <?= $animal->getPoids() ?> cms</p>
                 <p>Age: <?= $animal->getAge() ?> ans</p>
 
-                <a><button class="btn btn-dark">Réserver l'animal</button></a>
+                <H3>Réserver l'animal</H3>
+                <form action="index.php?page=reservation">
+                    <label>Entrez votre nom</label>
+                    <input type="text" name="nom">
+                </form>
 
             </div>
         </div>

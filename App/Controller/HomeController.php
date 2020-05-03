@@ -21,31 +21,21 @@ class HomeController extends Controller
     { // Ce  qui s'affiche sur la home
         $animaux = $this->AnimalModel->findLast(); // Liste des animaux
         $produits = $this->ProduitModel->findLast(); // Liste des produits
+        $date = date("Y/m/d");
         return $this->render("Homepage/indexView", [
             'animaux' => $animaux,
-            'produits' => $produits
+            'produits' => $produits,
+            "date" => $date
         ]);
     }
 
-    public function dons(){
-
-            if(!empty($_POST['user_id']) && !empty($_POST['montant']) && !empty($_POST['date'])) {
-
-                $this->interface->save($_POST, 'montant');
-                return $this->redirectToRoute('Homepage/Remerciment_dons');
-            }
-        }
-
-    public function merci(){
+    public function merci(){ //DONS
 
         if(!empty($_POST['nom']) && !empty($_POST['montant']) && !empty($_POST['date'])) {
 
             $this->interface->save($_POST, 'dons');
-            return $this->redirectToRoute('Homepage/Remerciment_dons');
+            return $this->render('Homepage/Remerciment_dons');
         }
-        else 
-
-        return "Erreur de Paiement";
     }
 
 }

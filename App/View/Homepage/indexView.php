@@ -98,6 +98,9 @@
     </div>
 </div>
 
+
+
+
 <style>
 * {box-sizing: border-box}
 body {font-family: Verdana, sans-serif; margin:0}
@@ -221,10 +224,10 @@ function showSlides(n) {
             <p class="text-center" > Cet argent nous servira pour prendre soin des animaux en attendant que des
                 personnes bienveillantes viennent adopter un animal.</p>
   
-    <form action="index.php?page=Remerciment_dons" method="post">
+        <form action="index.php?page=merci" method="post">
         Nom: <input type="text" name="nom"><br>
         Montant: <input type="number" name="montant"><br>
-        Date: <input type="date" name="date"><br>
+        <input type="hidden" value="<?= $date ?>" name="date">
         <button type="submit">Donner</button>
     </form>
        

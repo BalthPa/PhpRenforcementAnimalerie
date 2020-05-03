@@ -30,4 +30,12 @@ class AnimalController extends Controller{
         ]);
     }
 
+    public function reservation(){
+        if(!empty($_POST['nom']) && !empty($_POST['animal_id']) && !empty($_POST['date']) && !empty($_POST['date_rdv'])) {
+
+            $this->interface->save($_POST, 'dons');
+            return $this->render('Homepage/Remerciment_dons');
+        }
+    }
+
 }
