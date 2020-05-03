@@ -5,8 +5,8 @@
             <h3 class="card-title"><?= $animal->getNom() ?></h3>
                 <p>Type: <?= $animal->getType() ?></p>
                 <p>Race: <?= $animal->getRace() ?></p>
-                <p>Poids: <?= $animal->getPoids() ?> kgs</p>
-                <p>Taille: <?= $animal->getPoids() ?> cms</p>
+                <p>Poids: <?= $animal->getPoids() ?> grs</p>
+                <p>Taille: <?= $animal->getTaille() ?> cms</p>
                 <p>Age: <?= $animal->getAge() ?> ans</p>
 
                 <H3>Choississez une date de rendez vous</H3>

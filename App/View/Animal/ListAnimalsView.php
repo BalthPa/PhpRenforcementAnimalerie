@@ -31,7 +31,7 @@
                 <div class="card-text">
                     <p>Type: <?= $animal->getType() ?></p>
                     <p>Race: <?= $animal->getRace() ?></p>
-                    <p>Poids: <?= $animal->getPoids() ?> kgs</p>
+                    <p>Poids: <?= $animal->getPoids() ?> grs</p>
                     <p>Taille: <?= $animal->gettaille() ?> cms</p>
                     <p>Age: <?= $animal->getAge() ?> ans</p>
                 </div>

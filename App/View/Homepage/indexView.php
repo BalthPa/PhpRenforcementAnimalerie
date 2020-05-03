@@ -18,7 +18,7 @@
                 echo '<img class="card-img-top" style="width: 100%; margin:auto" src="https://bit.ly/2Yru7Gi" alt="Photo de chat">';
             }
             else if ($animal->getRace() == 'Poisson'){
-                echo '<img class="card-img-top" style="width: 100%; margin:auto" src="https://lemagdesanimaux.ouest-france.fr/images/dossiers/2020-04/voile-de-chine-113105.jpg" alt="Photo de poisson">';
+                echo '<img class="card-img-top" style="width: 100%; margin:auto" src="https://bit.ly/2z9rrCA" alt="Photo de poisson">';
             }
             else if ($animal->getRace() == 'Lapin'){
                 echo '<img class="card-img-top" style="width: 50%; margin:auto" src="https://bit.ly/3aY33Bn" alt="Photo de lapin">';
@@ -69,7 +69,7 @@
                 <div class="card-text">
                     <p>Type: <?= $animal->getType() ?></p>
                     <p>Race: <?= $animal->getRace() ?></p>
-                    <p>Poids: <?= $animal->getPoids() ?> kgs</p>
+                    <p>Poids: <?= $animal->getPoids() ?> grs</p>
                     <p>Taille: <?= $animal->gettaille() ?> cms</p>
                     <p>Age: <?= $animal->getAge() ?> ans</p>
                 </div>
