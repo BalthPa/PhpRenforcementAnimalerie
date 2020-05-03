@@ -69,6 +69,17 @@
     </div>
 </div>
 
-<div class="don">
-
+<div class="don" style="padding-top: 80px;  padding-bottom: 80px">
+    <div class="container">
+        <h2 class="text-center"> Formulaire de don</h2>
+        <form>
+            <p class="text-center" > Cet argent nous servira pour prendre soin des animaux en attendant que des
+                personnes bienveillantes viennent adopter un animal.</p>
+            <div class="form-group">
+                <label for="exampleInputPassword1">De combien d'euros voulez-vous faire un don ?</label>
+                <input type="number" class="form-control" id="exampleInputPassword1" placeholder="Ex: 20€">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
 </div>
