@@ -38,15 +38,15 @@ class UserController extends Controller{
      */
     public function login(){
         if(!empty($_POST)){
-            $user = $this->model->findOneBy(['email' => $_POST["email"]]);
-            if (!is_null($user)){
-                $connected = $this->encoder->passwordVerify($_POST["password"], $user->password);
-                if($connected){
+            $user = $this->model->findOneBy(['mail' => $_POST["mail"]]);
+            //if (!is_null($user)){
+                //$connected = $this->encoder->passwordVerify($_POST["password"], $user->password);
+                //if($connected){
                     $_SESSION["user"] = $user;
-                }
+                //}
                 return $this->redirectToRoute("home");
             }
-        }
+        //}
         return $this->render('user/login');
 
     }
