@@ -12,6 +12,7 @@ class ProduitController extends Controller
     public function __construct()
     {
         $this->ProduitModel = new ProduitModel();
+        $this->interface = new DbInterface();
     }
 
     public function ListeProduits(){ // Liste de tous les produits
@@ -32,8 +33,7 @@ class ProduitController extends Controller
     public function addPanier(){
         if(!empty($_POST)){
 
-
-            if(!empty($_POST['produit']) && !empty($_POST['quantite']) && !empty($_POST['montant'])) {
+            if(!empty($_POST['produit_id']) && !empty($_POST['quantite']) && !empty($_POST['montant'])) {
 
                 $this->interface->save($_POST, 'panier');
             }}

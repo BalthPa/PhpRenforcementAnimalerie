@@ -27,7 +27,11 @@
         </div>
         <div class="form-group">
             <label for="telephone">Telephone</label>
-            <input type="number" class="form-control" id=telephone" name="telephone">
+            <input type="number" class="form-control" id=telephone" name="tel">
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id=password" name="password">
         </div>
         <button type="submit" class="btn btn-primary">Enregistrer</button>
     </form>

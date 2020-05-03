@@ -6,7 +6,6 @@ use Core\Controller\Controller;
 use Core\Manager\PasswordEncoderManager;
 use Core\Model\DbInterface;
 
-
 class UserController extends Controller{
 
     public function __construct()
@@ -26,6 +25,7 @@ class UserController extends Controller{
             if(!empty($_POST['nom']) && !empty($_POST['prenom']) && !empty($_POST['adresse']) && !empty($_POST['ville'])
                 && !empty($_POST['cp']) && !empty($_POST['mail']) && !empty($_POST['telephone'])) {
 
+                $this->
                 $this->interface->save($_POST, 'user');
                 return $this->redirectToRoute('home');
             }
@@ -42,11 +42,12 @@ class UserController extends Controller{
             //if (!is_null($user)){
                 //$connected = $this->encoder->passwordVerify($_POST["password"], $user->password);
                 //if($connected){
-                    $_SESSION["user"] = $user;
-                //}
+            $_SESSION["user"] = $user;
+            $_SESSION["id"] = $this->model->getId();
+               // }
                 return $this->redirectToRoute("home");
-            }
-        //}
+            //}
+        }
         return $this->render('user/login');
 
     }

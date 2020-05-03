@@ -9,10 +9,15 @@
                 <p>Taille: <?= $animal->getPoids() ?> cms</p>
                 <p>Age: <?= $animal->getAge() ?> ans</p>
 
-                <H3>Réserver l'animal</H3>
-                <form action="index.php?page=reservation">
+                <H3>Choississez une date de rendez vous</H3>
+                <form action="index.php?page=reservation" method="post">
                     <label>Entrez votre nom</label>
                     <input type="text" name="nom">
+                    <input type="hidden" value="<?= $animal->getId() ?>" name="animal_id">
+                    <input type="hidden" value="<?= $date ?>" name="date">
+                    <label>Choisissez une date</label>
+                    <input type="date" name="dateRdv">
+                    <button type="submit">Réserver l'animal</button>
                 </form>
 
             </div>
