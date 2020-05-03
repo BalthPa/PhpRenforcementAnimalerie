@@ -221,7 +221,7 @@ function showSlides(n) {
             <p class="text-center" > Cet argent nous servira pour prendre soin des animaux en attendant que des
                 personnes bienveillantes viennent adopter un animal.</p>
   
-    <form action="index.php?page=merci" method="post">
+    <form action="index.php?page=Remerciment_dons" method="post">
         Nom: <input type="text" name="nom"><br>
         Montant: <input type="number" name="montant"><br>
         Date: <input type="date" name="date"><br>
