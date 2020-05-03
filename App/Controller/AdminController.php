@@ -1,7 +1,9 @@
 <?php
 
 namespace App\Controller;
+use App\Model\CommandeModel;
 use App\Model\ProduitModel;
+use App\Model\ReservationModel;
 use Core\Controller\Controller;
 use Core\Model\DbInterface;
 use App\Model\AnimalModel;
@@ -13,6 +15,8 @@ class AdminController extends Controller{
         $this->interface = new DbInterface();
         $this->PropertyModel = new AnimalModel();
         $this->ProductModel = new ProduitModel();
+        $this->CommandeModel = new CommandeModel();
+        $this->ReservationModel = new ReservationModel();
     }
 
     /**
@@ -118,5 +122,21 @@ class AdminController extends Controller{
         }
 
         return $this->redirectToRoute('home');
+    }
+
+    public function adminCommandes(){
+        $commandes = $this->CommandeModel->findAll();
+
+        return $this->render('Admin/Commandes', [
+            'commandes' => $commandes
+        ]);
+    }
+
+    public function adminRdv(){
+        $reservations = $this->ReservationModel->findAll();
+
+        return $this->render('Admin/Reservation',[
+            'reservations' => $reservations
+        ]);
     }
 }

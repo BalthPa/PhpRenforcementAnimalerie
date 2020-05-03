@@ -4,16 +4,16 @@ namespace App\Entity;
 
 use Core\Entity\Entity;
 
-class Panier extends Entity{
+class Commande extends Entity{
     private $id;
 
-    private $produitNom;
+    private $date;
 
-    private $quantite;
+    private $etat;
 
     private $montant;
 
-    
+
 
     /**
      * Get the value of id
@@ -38,9 +38,9 @@ class Panier extends Entity{
     /**
      * Get the value of produit
      */
-    public function getProduitNom()
+    public function getDate()
     {
-        return $this->produitNom;
+        return $this->date;
     }
 
     /**
@@ -48,9 +48,9 @@ class Panier extends Entity{
      *
      * @return  self
      */
-    public function setProduitNom($produitNom)
+    public function setDate($date)
     {
-        $this->produitNom = $produitNom;
+        $this->date = $date;
 
         return $this;
     }
@@ -58,9 +58,9 @@ class Panier extends Entity{
     /**
      * Get the value of quantite
      */
-    public function getQuantite()
+    public function getEtat()
     {
-        return $this->quantite;
+        return $this->etat;
     }
 
     /**
@@ -68,9 +68,9 @@ class Panier extends Entity{
      *
      * @return  self
      */
-    public function setQuantite($quantite)
+    public function setEtat($etat)
     {
-        $this->quantite = $quantite;
+        $this->etat = $etat;
 
         return $this;
     }

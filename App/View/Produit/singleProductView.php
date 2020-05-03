@@ -13,7 +13,7 @@
             <label for="quantite">Quantité</label>
             <input type="number" id="quantite" name="quantite">
             <input type="hidden" name="montant" value="<?= $produit->getPrix() ?>">
-            <input type="hidden" name="produit_id" value="<?= $produit->getId() ?>">
+            <input type="hidden" name="produitNom" value="<?= $produit->getNom() ?>">
         <a><button type="submit" class="btn btn-dark">Ajouter au panier</button></a>
 
         </form>

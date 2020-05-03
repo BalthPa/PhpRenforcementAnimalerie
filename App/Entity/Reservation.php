@@ -4,16 +4,18 @@ namespace App\Entity;
 
 use Core\Entity\Entity;
 
-class Panier extends Entity{
+class Reservation extends Entity{
     private $id;
 
-    private $produitNom;
+    private $date;
 
-    private $quantite;
+    private $nom;
 
-    private $montant;
+    private $dateRdv;
 
-    
+    private $animalId;
+
+
 
     /**
      * Get the value of id
@@ -38,9 +40,9 @@ class Panier extends Entity{
     /**
      * Get the value of produit
      */
-    public function getProduitNom()
+    public function getDate()
     {
-        return $this->produitNom;
+        return $this->date;
     }
 
     /**
@@ -48,9 +50,9 @@ class Panier extends Entity{
      *
      * @return  self
      */
-    public function setProduitNom($produitNom)
+    public function setDate($date)
     {
-        $this->produitNom = $produitNom;
+        $this->date = $date;
 
         return $this;
     }
@@ -58,9 +60,9 @@ class Panier extends Entity{
     /**
      * Get the value of quantite
      */
-    public function getQuantite()
+    public function getDateRdv()
     {
-        return $this->quantite;
+        return $this->dateRdv;
     }
 
     /**
@@ -68,9 +70,9 @@ class Panier extends Entity{
      *
      * @return  self
      */
-    public function setQuantite($quantite)
+    public function setDateRdv($dateRdv)
     {
-        $this->quantite = $quantite;
+        $this->dateRdv = $DateRdv;
 
         return $this;
     }
@@ -78,9 +80,9 @@ class Panier extends Entity{
     /**
      * Get the value of montant
      */
-    public function getMontant()
+    public function getAnimalId()
     {
-        return $this->montant;
+        return $this->animalId;
     }
 
     /**
@@ -88,9 +90,29 @@ class Panier extends Entity{
      *
      * @return  self
      */
-    public function setMontant($montant)
+    public function setAnimalId($animalId)
     {
-        $this->montant = $montant;
+        $this->animalId = $animalId;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of montant
+     */
+    public function getNom()
+    {
+        return $this->nom;
+    }
+
+    /**
+     * Set the value of montant
+     *
+     * @return  self
+     */
+    public function setNom($nom)
+    {
+        $this->nom = $nom;
 
         return $this;
     }

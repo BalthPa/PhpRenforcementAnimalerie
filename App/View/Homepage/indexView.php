@@ -1,6 +1,6 @@
 <div class="presentation text-center p-3">
     <h1>SPA</h1>
-    <p>Nous sommes une association d'aide aux animaux abandonnées</p>
+    <p>Nous sommes une association d'aide aux animaux abandonnées <?= $id ?></p>
 </div>
 <div class="recherche mt-5"></div>
 
@@ -98,6 +98,22 @@
     </div>
 </div>
 
+<div class="dons" style="padding-top: 80px;  padding-bottom: 80px">
+    <div class="container">
+        <h2 class="text-center"> Formulaire de dons</h2><br>
+        <p class="text-center"> Cet argent nous servira pour prendre soin des animaux en attendant que des
+            personnes bienveillantes viennent adopter un animal.</p><br>
+
+        <form action="index.php?page=merci" method="post" class="text-center">
+            Nom: <input type="text" name="nom"><br>
+            Montant: <input type="number" name="montant"><br>
+            <input type="hidden" value="<?= $date ?>" name="date"><br>
+            <button type="submit">Donner</button>
+        </form>
+
+    </div>
+</div>
+</div>
 
 
 
@@ -218,19 +234,3 @@ function showSlides(n) {
 }
 </script>
 
-<div class="dons" style="padding-top: 80px;  padding-bottom: 80px">
-    <div class="container">
-        <h2 class="text-center"> Formulaire de dons</h2><br>
-            <p class="text-center"> Cet argent nous servira pour prendre soin des animaux en attendant que des
-                personnes bienveillantes viennent adopter un animal.</p><br>
-  
-        <form action="index.php?page=merci" method="post" class="text-center">
-        Nom: <input type="text" name="nom"><br>
-        Montant: <input type="number" name="montant"><br>
-        <input type="hidden" value="<?= $date ?>" name="date"><br>
-        <button type="submit">Donner</button>
-    </form>
-       
-    </div>
-    </div>
-</div>

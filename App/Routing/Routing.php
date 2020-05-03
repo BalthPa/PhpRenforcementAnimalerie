@@ -66,7 +66,17 @@ if (isset($_GET["page"]) && $_GET["page"] == 'admin') {
     $controller = new AdminController();
     $controller->adminProduits();
 
-} elseif (isset($_GET["page"]) && $_GET["page"] == 'addAnimal') {
+} elseif (isset($_GET["page"]) && $_GET["page"] == 'adminCommandes') {
+    $controller = new AdminController();
+    $controller->adminCommandes();
+
+}elseif (isset($_GET["page"]) && $_GET["page"] == 'adminRdv') {
+    $controller = new AdminController();
+    $controller->adminRdv();
+
+}
+
+elseif (isset($_GET["page"]) && $_GET["page"] == 'addAnimal') {
     $controller = new AdminController();
     $controller->addAnimal();
 } elseif (isset($_GET["page"]) && $_GET["page"] == 'addProduit') {
@@ -111,4 +121,9 @@ if (isset($_GET["page"]) && $_GET["page"] == 'merci') {
 if (isset($_GET["page"]) && $_GET["page"] == 'reservation') {
     $controller = new AnimalController();
     $controller->reservation();
+}
+
+if (isset($_GET["page"]) && $_GET["page"] == 'paiement') {
+    $controller = new PanierController();
+    $controller->paiement();
 }

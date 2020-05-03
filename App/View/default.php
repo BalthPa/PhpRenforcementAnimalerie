@@ -21,6 +21,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="index.php?page=allProducts">Liste des produits</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php?page=panier">Panier</a>
+                    </li>
                     <?php if (!isset($_SESSION["user"])): ?>
                         <li class="nav-item">
                             <a class="nav-link" href="index.php?page=signup">Inscription</a>
