@@ -5,8 +5,8 @@ use App\Controller\AnimalController;
 use App\Controller\UserController;
 use App\Controller\HomeController;
 use App\Controller\ProduitController;
+use App\Controller\AdminController;
 
-//use App\Controller\AnimalController;
 
 use Model\DbInterface;
 use Model\AnimalModel;
@@ -36,12 +36,13 @@ elseif (isset($_GET["page"]) && $_GET["page"] == 'allProducts') {
     $controller->FicheProduit();
 
 }
-/*
+
 if ((isset($_GET["page"]) && $_GET["page"] == 'signup')) {
     $controller = new UserController();
     $controller->signup();
 
-} elseif (isset($_GET["page"]) && $_GET["page"] == 'login') {
+}
+elseif (isset($_GET["page"]) && $_GET["page"] == 'login') {
     $controller = new UserController();
     $controller->login();
 
@@ -89,4 +90,4 @@ elseif (isset($_GET["page"]) && $_GET["page"] == 'updateAnimal') {
     $controller = new AdminController();
     $controller->deleteProduits();
 }
-*/
+
