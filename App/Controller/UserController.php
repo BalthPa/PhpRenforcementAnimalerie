@@ -39,8 +39,7 @@ class UserController extends Controller{
     public function login(){
         if(!empty($_POST)){
             $user = $this->model->findOneBy(['mail' => $_POST["mail"]]);
-            $id = $user->getId();
-            var_dump($id);
+
 
             //if (!is_null($user)){
                 //$connected = $this->encoder->passwordVerify($_POST["password"], $user->password);
@@ -49,9 +48,7 @@ class UserController extends Controller{
             session_start();
 
                // }
-                return $this->redirectToRoute("home", [
-                    'id' => $id
-                ]);
+                return $this->redirectToRoute("home");
             //}
         }
         return $this->render('user/login');
