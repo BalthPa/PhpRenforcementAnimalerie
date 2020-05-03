@@ -1,6 +1,6 @@
 <div class="presentation text-center p-3">
     <h1>SPA</h1>
-    <p>Nous sommes une association d'aide aux animaux abandonnées <?= $id ?></p>
+    <p>Nous sommes une association d'aide aux animaux abandonnées</p>
 </div>
 <div class="recherche mt-5"></div>
 
